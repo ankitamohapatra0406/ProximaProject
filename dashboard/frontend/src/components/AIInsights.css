@@ -1,0 +1,149 @@
+.ai-insights {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Top decision card */
+.ai-decision {
+  background-color: #ecfeff;
+  border-left: 6px solid #06b6d4;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.ai-decision h3 {
+  margin: 0 0 8px 0;
+  color: #0f172a;
+}
+
+.ai-decision p {
+  margin: 4px 0;
+}
+
+/* Grid for metrics */
+.ai-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.metric-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.metric-card h4 {
+  margin: 0 0 8px 0;
+  color: #374151;
+}
+
+.metric-card p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Highlight numbers */
+.metric-value {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+}
+/* Usage chart */
+.usage-chart {
+  margin-top: 10px;
+
+}
+
+.usage-row {
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.usage-label {
+  width: 90px;
+  font-size: 13px;
+  color: #065f46;
+}
+
+.usage-bar-container {
+  flex: 1;
+  background-color: #dcfce7;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 14px;
+}
+
+.usage-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+  width: 0;
+  animation: growBar 1.2s ease-out forwards;
+}
+
+.low .usage-bar {
+  background: linear-gradient(90deg, #4ade80, #86efac);
+}
+
+@keyframes growBar {
+  from {
+    width: 0;
+  }
+}
+/* Donut chart container */
+.donut-container {
+  display: flex;
+  gap: 16px;
+}
+
+.donut-card {
+  font-size: 1.5em;
+  flex: 1;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Donut chart */
+.donut {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 12px auto;
+  background: conic-gradient(
+    var(--color) var(--value),
+    #e5e7eb 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut-inner {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Usage section larger */
+.usage-large {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.usage-large h4 {
+  margin-bottom: 12px;
+}
