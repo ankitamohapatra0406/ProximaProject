@@ -1,0 +1,100 @@
+.live-status {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cards grid */
+.status-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.status-card {
+  
+  background-color: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+.status-card-ds {
+  text-align: center;
+  background-color: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+.ds{
+  font-size: 3em;
+}
+.status-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.status-card p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Control panel */
+.control-panel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.control-panel button {
+  padding: 20px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.control-panel button.off {
+  background-color: #dc2626;
+}
+/* Temperature controller */
+.temp-controller {
+  background-color: #eef2ff;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.temp-controller h4 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.temp-value {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #2563eb;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+/* Power controls */
+.power-controls {
+  display: flex;
+  gap: 10px;
+}
